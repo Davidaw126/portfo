@@ -4,8 +4,8 @@ import csv
 app = Flask(__name__)
 print(__name__)
 
-@app.route('/index.html')
-def hello_world():
+@app.route('/')
+def main_page():
     return render_template('index.html')
 
 @app.route('/<page_name>')
